@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController" customModule="toDoList" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="yaO-qD-3kS" id="sLe-uI-OQR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-1g-i6E">
+                    <rect key="frame" x="113" y="126" width="188" height="48"/>
+                    <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                    <state key="normal" title="Delete All ToDoList"/>
+                    <connections>
+                        <action selector="deleteData:" destination="-1" eventType="touchUpInside" id="cPi-VR-zkd"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yaO-qD-3kS">
+                    <rect key="frame" x="49" y="184" width="316" height="312"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="yaO-qD-3kS" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.75" id="6at-qD-hKC"/>
+                <constraint firstItem="SEH-1g-i6E" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Bzg-Gz-CDr"/>
+                <constraint firstItem="SEH-1g-i6E" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0535714" id="KFx-17-LhE"/>
+                <constraint firstItem="yaO-qD-3kS" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.348214" id="U8F-4a-XM8"/>
+                <constraint firstItem="yaO-qD-3kS" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.763285" id="j90-e8-Ysa"/>
+                <constraint firstItem="yaO-qD-3kS" firstAttribute="top" secondItem="SEH-1g-i6E" secondAttribute="bottom" constant="10" id="pQD-qw-AWD"/>
+                <constraint firstItem="yaO-qD-3kS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qP0-fd-aOP"/>
+                <constraint firstItem="SEH-1g-i6E" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.454106" id="wNs-8w-x2k"/>
+            </constraints>
+            <point key="canvasLocation" x="531.8840579710145" y="-41.517857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
